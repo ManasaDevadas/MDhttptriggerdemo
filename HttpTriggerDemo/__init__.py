@@ -33,7 +33,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             place = req_body.get('place')
 
     if name and place :
-        return func.HttpResponse(f"Hello {name}, {place}, your secretcode is {secretcode}  The function is triggered successfully")
+        return func.HttpResponse(f"Hello {name}, {place}, your secretcode is {secretcode}..  The function is triggered successfully")
     else:
         return func.HttpResponse(
              "This HTTP triggered function executed successfully. Pass a name and place in the query string or in the request body for a personalized response.",
